@@ -58,7 +58,7 @@ where screen_name = "Vesa";
 ![exc7q1.png](pictures%2Fexc7%2Fexc7q1.png)
 
 ###exc7q2
-from game
+from goal_reached
 
 ###exc7q3
 #delet FROM goal reached;

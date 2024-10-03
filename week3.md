@@ -48,7 +48,8 @@ where airport.iso_country = country.iso_country and country.name = "Iceland";
 ###exc3q2
 select airport.name as "airport name"
 from airport, country
-where airport.iso_country = country.iso_country and country.name = "France" and airport.type = "large_airport";
+where airport.iso_country = country.iso_country and 
+country.name = "France" and airport.type = "large_airport";
 ![exc3q2.png](pictures%2Fexc3%2Fexc3q2.png)
 
 ###ecx3q3
@@ -78,24 +79,30 @@ where location = ident and screen_name = "Ilkka";
 ###exc3q7
 select country.name
 from airport,game,country
-where location = ident and airport.iso_country = country.iso_country and screen_name = "Ilkka";
+where location = ident and airport.iso_country = country.iso_country
+and screen_name = "Ilkka";
 ![exc3q7.png](pictures%2Fexc3%2Fexc3q7.png)
 
 ###exc3q8
 select name
 from goal,goal_reached,game
-where goal.id = goal_id and game.id = game_id and screen_name = "Heini";
+where goal.id = goal_id and game.id = game_id and 
+screen_name = "Heini";
 ![exc3q8.png](pictures%2Fexc3%2Fexc3q8.png)
 
 ###exc3q9
 select airport.name
 from airport, game, goal, goal_reached
-where ident = location and game.id = game_id and goal.id = goal_id and screen_name = "Ilkka" and goal.name = "CLOUDS";
+where ident = location and game.id = game_id and 
+goal.id = goal_id and screen_name = "Ilkka" and 
+goal.name = "CLOUDS";
 ![exc3q9.png](pictures%2Fexc3%2Fexc3q9.png)
 
 exc3q10
 select country.name
 from country, airport, game, goal, goal_reached
-where airport.iso_country = country.iso_country and ident = location 
-and game.id = game_id and goal.id = goal_id and screen_name = "Ilkka" and goal.name = "CLOUDS";
+where airport.iso_country = country.iso_country
+and ident = location and game.id = game_id and 
+goal.id = goal_id and screen_name = "Ilkka" and
+goal.name = "CLOUDS";
 ![exc3q10.png](pictures%2Fexc3%2Fexc3q10.png)
